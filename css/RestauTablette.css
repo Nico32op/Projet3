@@ -1,0 +1,377 @@
+@media(min-width: 768px) and (max-width: 1280px) /*partie tablette*/
+{
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/roboto-v20-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('fonts/roboto-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/roboto-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('fonts/roboto-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('fonts/roboto-v20-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+body
+{
+width :100%;
+padding :0px;
+margin: 0px;
+font-family: 'Roboto';
+}
+
+.logo{ /*postion image titre*/
+  width: 190px;
+  height: 50px;
+  margin-left: 280px;
+}
+
+.fa-arrow-left{ /*postion logo retour*/
+    position: absolute;
+    top: 20px;
+    left: 130px;
+}
+
+.imghaut{ /*postion image "a la française"*/
+    height: 250px;
+    width: 505px;
+    margin-left: 130px;
+}
+
+h2{ /*postion titre "a la française"*/
+    padding-top: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.fa-heart{ /*position logo coeur*/
+    position: absolute;
+    right: 35px;
+}
+
+.heart .plain:hover{ /*lorsqu'on passe sur les coeur il devient violet après 2 sec*/
+  color: purple;
+  opacity: 1;
+  transition-duration: 2s;
+}
+
+.heart .plain{ /*les coeurs plein et vide sont superposés*/
+  color: blue;
+  opacity: 0;
+ }
+
+.heart .vide{
+  color: black;
+}
+
+.left{
+    width: 60%;
+    height: 1040px; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    border: 2px none;
+    border-radius: 38px 38px 0px 0px;
+    background-color: #F2F2F2;
+    justify-content: space-around;
+    padding-left: 45px;
+    margin-left: 130px;
+    margin-top: 40px;
+    position: absolute;
+    top: 220px;
+}
+
+.left .card, .cardmodif{
+    border: 2px solid none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #555;
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: white;
+    position: relative;
+}
+
+.left .card:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
+  transform: translate(-15px, 0) rotate(360deg);
+  visibility: visible;
+}
+
+.fa-check-circle{ /*modif du logo check+ animation*/ 
+	color: white;
+	background-color: aqua;
+	transition: transform 1s;
+	font-size: 30px;
+	position: absolute;
+	left:360px;
+	top: 1px;
+  visibility: hidden;
+	padding: 12px;
+	border-radius: 0px 8px 8px 0px;
+}
+.left .card:hover .prix1{
+  transform: translate(-50px, 0);
+}
+
+.prix1{ /*modif des prix + animation*/
+	color: black;
+	font-weight: bolder;
+	position: absolute;
+	right: 35px;
+	transition: transform 1s;
+}
+
+.card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+    line-height: 2px;
+    margin-left: 12px;
+    background-color: white;
+}
+
+
+
+.card-title{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.card-text{
+    font-size: 16px;
+}
+
+.left h3{
+    margin-left: 12px;
+    text-decoration: underline green;
+}
+
+.left a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+    text-decoration: none;
+    color: black;
+}
+
+.partie1
+{
+    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.partie2, .partie3
+{
+    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10px;
+}
+ .partie1{ /*animation apparition des différents plats*/
+   animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s; /*safari et chrome*/
+  -moz-animation: fadeIn ease 2s; /*firefox*/
+  -o-animation: fadeIn ease 2s; /*opera*/
+  -ms-animation: fadeIn ease 2s;
+ }
+
+ @keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn { /*firefox*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn { /*safari et chrome*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn { /*opera*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+ .partie2{
+   animation: fadeIn ease 4s;
+  -webkit-animation: fadeIn ease 4s; /*safari et chrome*/
+  -moz-animation: fadeIn ease 4s; /*firefox*/
+  -o-animation: fadeIn ease 4s; /*opera*/
+  -ms-animation: fadeIn ease 4s;
+ }
+
+ @keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn { /*firefox*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn { /*safari et chrome*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn { /*opera*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+ .partie3{
+   animation: fadeIn ease 6s;
+  -webkit-animation: fadeIn ease 6s; /*safari et chrome*/
+  -moz-animation: fadeIn ease 6s; /*firefox*/
+  -o-animation: fadeIn ease 6s; /*opera*/
+  -ms-animation: fadeIn ease 6s;
+ }
+
+ @keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn { /*firefox*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn { /*safari et chrome*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn { /*opera*/
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
+p .btn-commander{
+    padding: 10px;
+    font-size: 18px;
+    background-color: #9356DC;
+    text-decoration: none;
+    border: 0px solid;
+    border-radius: 20px;
+    margin-left: 140px;
+    color: white;
+}
+
+p .btn-commander:hover{ /*animation boutan commander au survol*/
+  opacity: 0.5;
+  background-color: #FF79DA;
+  text-shadow: 2px 2px 2px black;
+  transition-duration: 3s;
+}
+
+footer{
+  color: white;
+  background-color: black;
+  height: 190px;
+  width: 505px;
+  position: absolute;
+  top: 1300px;
+  left: 130px;
+}
+
+footer a{ /*modif du lien contact*/
+  text-decoration: none;
+  color: white;
+}
+
+footer h4{
+    text-align: center;
+}
+
+footer p{
+  line-height: 7px;
+  margin-left: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+footer .fa-utensils{
+  margin-right: 10px;
+}
+
+footer .fa-hands-helping{
+  margin-right: 10px;
+}
+}

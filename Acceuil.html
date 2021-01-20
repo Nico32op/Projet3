@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/Acceuiltablette.css"/>
+    <link rel="stylesheet" href="css/Acceuilpc.css"/>
+    <link rel="stylesheet" href="css/Acceuilsmartphone.css"/> <!--la ligne qui relie mon html au css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"/> <!--la ligne qui me permet d'avoir les icones-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>OhMyFood</title>
+   </head>
+<body>
+
+
+<header>
+  <img class="logo" src="images/omf.png" alt="logo"> <!--logo dus site-->
+    <div class="haut">
+    <div class="bar-de-recherche">
+<label for="site-search"></label><i class="fas fa-map-marker-alt"></i> <!--le code pour la création du bouton de recherche-->
+<input  type="search" id="site-search" name="q"
+       aria-label="Search through site content">
+</div>	    
+    </div>
+    <div class="textehaut">
+        <h1>Réservez le menu qui vous convient</h1>
+        <p>Découvrez des restaurants d'exeption, <br>sélectionnés par nos soins.</p>
+        <p><a class="btn" href="#" role="button">Explorer nos restaurants</a></p>
+    </div>
+</header>    
+
+<main>
+<nav class="menu-nav1">
+ <ul>
+    <li class="btnoff"><p>Fonctionnement</p> <!--rendre le bouton inutilisable-->
+    </li>
+    <li class="btn1"><a href=""><i class="fas fa-mobile-alt"></i> Choisissez un restaurant</a>
+    </li>
+    <li class="btn2"><a href=""><i class="fas fa-list"></i> Composez votre menu</a>
+    </li>
+    <li class="btn0"><a href=""><i class="fas fa-store"></i> Degustez au restaurant</a>
+    </li>
+  </ul>
+</nav>
+
+<li class="btnmenu1"><a href="#">Nouveau</a></li><!--boutons Nouveau-->
+<li class="btnmenu2"><a href="#">Nouveau</a></li>
+
+<div class="container">
+<h2>Restaurants</h2> 
+<div class="image1">
+   
+   <div class="card">
+      <img class="card-img-top" src="images/r1.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-title"><a href="La-palette-du-goût.html">La palette du goût<span class=heart><i class="far fa-heart vide"></i></span><span class="heart"><i class="fas fa-heart plain"></i></span></a></p> <!--création des coeurs pleins et vide pour les superposer-->
+        <p class="card-text">Ménilmontant</p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img class="card-img-top" src="images/r2.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-title"><a href="La-note-enchantée.html">La note enchantée<span class=heart><i class="far fa-heart vide"></i></span><span class="heart"><i class="fas fa-heart plain"></i></span></a></p>
+        <p class="card-text">Charonne</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="images/r3.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-title"><a href="A-la-française.html">A la française<span class=heart><i class="far fa-heart vide"></i></span><span class="heart"><i class="fas fa-heart plain"></i></span></a></p>
+        <p class="card-text">Cité Rouge</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img class="card-img-top" src="images/r4.jpg" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-title"><a href="Le-delice-des-sens.html">Le délice des sens<span class=heart><i class="far fa-heart vide"></i></span><span class="heart"><i class="fas fa-heart plain"></i></span></a></p>
+        <p class="card-text">Folie-Méricourt</p>
+      </div>
+    </div>
+   </div>
+</div>
+</main>
+<div class="loader"></div> <!--création du loader-->
+<footer>
+	<h4>OhMyFood</h4>
+	<div class="f1"><p><i class="fas fa-utensils"></i>Proposer un restaurant</p></div>
+	<div class="f2"><p><i class="fas fa-hands-helping"></i>Devenir Partenaire</p></div>
+	<div class="f3"><p>Mentions légales</p></div>
+	<div class="f4"><p><a href="mailto:adresse@serveur.com">Contact</a></p></div>
+</footer>
+</body>
+</html>
