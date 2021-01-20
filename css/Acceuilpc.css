@@ -19,6 +19,11 @@ width :100%;
 padding :0px;
 margin: 0px;
 font-family: 'Roboto';
+background-color: #F2F2F2;
+}
+
+main{
+  background-color: white;
 }
 
 header i { /*modif position logo géolocalisation*/
@@ -122,7 +127,6 @@ nav.menu-nav1 ul{ /*dispotion des nav*/
 nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
   color: black;
   text-decoration: none;
-  background-color: none;
   margin-right: 12px;
   font-size: 15px;
   font-weight: bolder;
@@ -130,7 +134,6 @@ nav.menu-nav1 a { /*les textes des catégories nav sont écries en noir, il n'y 
 
 nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a{ /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
   color: blue;
-  background-color: none;
 }
 
 .menu-nav1 { 
@@ -167,7 +170,6 @@ nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a{ /*quand on pass
     width: 100%; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
     border-radius: 8px;
-    background-color: #F2F2F2;
 }
 
 .card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
