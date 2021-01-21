@@ -360,6 +360,7 @@ p .btn-commander:hover{ /*animation boutan commander au survol*/
   opacity: 0.5;
   background-color: #FF79DA;
   text-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
   transition-duration: 3s;
 }
 

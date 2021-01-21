@@ -83,6 +83,7 @@ input{     /*modif lieu de saisie bare de recherche*/
   opacity: 0.5;
   background-color: #FF79DA;
   text-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
   transition-duration: 3s;
 }
 
@@ -324,6 +325,7 @@ width :100%;
 padding :0px;
 margin: 0px;
 font-family: 'Roboto';
+background-color: white;
 }
 
 header{
@@ -461,6 +463,7 @@ nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a{ /*quand on pass
 
 .container{
     width: 95%; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    height: 1000px;
     border: 2px none;
     border-radius: 8px;
     background-color: #F2F2F2;
@@ -542,7 +545,7 @@ footer{
   width: 100%;
   position: absolute;
   display: flex;
-  top: 1605px;
+  top: 1650px;
 }
 
 footer p{
