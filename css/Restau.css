@@ -65,7 +65,7 @@ h2{ /*postion titre "a la française"*/
 
 .container{
     width: 100%;
-    height: 90%; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    height: 90%; /* j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
     border-radius: 38px 38px 0px 0px;
     background-color: #F2F2F2;
@@ -89,7 +89,7 @@ h2{ /*postion titre "a la française"*/
 
 .container .cardmodif{
   margin-left: 95px;
-}
+ }
 
 .container .card:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
   transform: translate(-15px, 0) rotate(360deg);
@@ -106,7 +106,8 @@ h2{ /*postion titre "a la française"*/
 	top: 1px;
   visibility: hidden;
 	padding: 12px;
-	border-radius: 0px 8px 8px 0px;
+  border-radius: 0px 8px 8px 0px;
+  display: block;
 }
 .container .card:hover .prix1{
   transform: translate(-50px, 0);
@@ -120,7 +121,7 @@ h2{ /*postion titre "a la française"*/
 	transition: transform 1s;
 }
 
-.card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+.card-body{ /*contier le titre et le texte des*/
     line-height: 2px;
     margin-left: 12px;
     background-color: white;
@@ -132,7 +133,10 @@ h2{ /*postion titre "a la française"*/
 }
 
 .card-text{
-    font-size: 16px;
+   width: auto; 
+   font-size: 16px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .container h3{
@@ -457,7 +461,7 @@ h2{ /*postion titre "a la française"*/
 
 .container{
     width: 100%;
-    height: 1040px; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    height: 1040px; /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
     border-radius: 38px 38px 0px 0px;
     background-color: #F2F2F2;
@@ -512,7 +516,7 @@ h2{ /*postion titre "a la française"*/
 	transition: transform 1s;
 }
 
-.card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+.card-body{ 
     line-height: 2px;
     margin-left: 12px;
     background-color: white;
@@ -664,7 +668,7 @@ h2{ /*postion titre "a la française"*/
 
 .container{
     width: 60%;
-    height: 1040px; /*la partie gauche du main mesure 60% de la page, j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+    height: 1040px; /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
     border-radius: 38px 38px 0px 0px;
     background-color: #F2F2F2;
