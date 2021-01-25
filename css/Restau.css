@@ -149,7 +149,7 @@ h2{ /*postion titre "a la française"*/
 }
 
 .card-text{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .container h3{
@@ -365,7 +365,7 @@ h2{ /*postion titre "a la française"*/
 p .btn-commander{
     padding: 10px;
     font-size: 18px;
-    background-color: #9356DC;
+    background:linear-gradient(#9356DC, #FF79DA);
     text-decoration: none;
     border: 0px solid;
     border-radius: 20px;
@@ -375,7 +375,7 @@ p .btn-commander{
 
 p .btn-commander:hover{ /*animation boutan commander au survol*/
   opacity: 0.5;
-  background-color: #FF79DA;
+  background-color:#FF79DA;
   text-shadow: 2px 2px 2px black;
   box-shadow: 2px 2px 2px black;
   transition-duration: 3s;
@@ -518,7 +518,7 @@ h2{ /*postion titre "a la française"*/
 	border-radius: 0px 8px 8px 0px;
 }
 .container .card:hover .prix1{
-  transform: translate(-50px, 0);
+  transform: translate(-40px, 0);
 }
 
 .prix1{ /*modif des prix + animation*/
@@ -541,7 +541,7 @@ h2{ /*postion titre "a la française"*/
 }
 
 .card-text{
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .container h3{
@@ -748,7 +748,7 @@ h2{ /*postion titre "a la française"*/
 }
 
 .card-text{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .container h3{
@@ -813,31 +813,31 @@ footer a{ /*modif du lien contact*/
 
 footer h4{
   position: absolute;
-  left: 200px;
+  left: 5px;
   bottom: 145px;
 }
 
 .f1{ /*postion des texte du footer */ 
   position: absolute;
-  left: 200px;
+  left: 5px;
   bottom: 110px;
 }
 
 .f2{
   position: absolute;
-  left: 200px;
+  left: 5px;
   bottom: 85px;
 }
 
 .f3{
   position: absolute;
-  left: 200px;
+  left: 5px;
   bottom: 65px;
 }
 
 .f4{
   position: absolute;
-  left: 200px;
+  left: 5px;
   bottom: 40px;
 }
 
