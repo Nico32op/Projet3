@@ -1,3 +1,6 @@
+@media(max-width: 2000px)
+{
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -331,6 +334,7 @@ opacity: 1;
  100%{
  transform:rotate(360deg);
  }
+}
 }
 
 @media(max-width: 767px) /*adapté site au format smartphone*/

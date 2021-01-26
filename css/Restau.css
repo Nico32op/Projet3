@@ -1,3 +1,6 @@
+@media(max-width: 2000px)
+{
+
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -433,6 +436,7 @@ footer .fa-utensils{ /*postion des logo du footer*/
 
 footer .fa-hands-helping{
   margin-right: 10px;
+}
 }
 
 
