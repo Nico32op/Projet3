@@ -861,7 +861,7 @@ footer .fa-hands-helping{
   {
   width :100%;
   padding :0px;
-  margin: 0px;
+  margin: auto;
   font-family: 'Roboto';
   }
   
@@ -896,7 +896,7 @@ footer .fa-hands-helping{
   }
   
   .container{
-      width: 50%;
+      width: 630px;
       height: 1090px; /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
       border: 2px none;
       border-radius: 38px 38px 0px 0px;
@@ -1016,7 +1016,7 @@ footer .fa-hands-helping{
     color: white;
     background-color: black;
     height: 190px;
-    width: 66%;
+    width: 832px;
     margin-left: 182px;
     position: absolute;
     top: 1345px;
