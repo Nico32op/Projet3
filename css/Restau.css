@@ -72,7 +72,7 @@ h2{ /*postion titre "a la française"*/
 }
 
 .heart .plain{ /*les coeurs plein et vide sont superposés*/
-  color: blue;
+  color: blue; /*couleur on voit pas juste un exemple*/
   opacity: 0;
  }
 
@@ -80,7 +80,7 @@ h2{ /*postion titre "a la française"*/
   color: black;
 }
 
-.container{
+.containerresto{
     width: 100%;
     height: 90%; /* j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
@@ -94,7 +94,7 @@ h2{ /*postion titre "a la française"*/
     top: 220px;
 }
 
-.container .card, .cardmodif{ /*card modif est le 4eme plat des entrées que je souhaite déplacer pour la partie pc*/
+.containerresto .cardresto, .cardmodif{ /*card modif est le 4eme plat des entrées que je souhaite déplacer pour la partie pc*/
     border: 2px solid none;
     border-radius: 8px;
     box-shadow: 1px 1px 2px #555;
@@ -104,11 +104,11 @@ h2{ /*postion titre "a la française"*/
     position: relative;
 }
 
-.container .cardmodif{
-  margin-left: 95px;
+.containerresto .cardmodif{
+  margin-left: 105px;
  }
 
-.container .card:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
+.containerresto .cardresto:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
   transform: translate(-15px, 0) rotate(360deg);
   visibility: visible;
 }
@@ -125,7 +125,7 @@ h2{ /*postion titre "a la française"*/
 	padding: 12px;
   border-radius: 0px 8px 8px 0px;
 }
-.container .card:hover .prix1{
+.containerresto .cardresto:hover .prix1{
   transform: translate(-50px, 0);
 }
 
@@ -137,32 +137,32 @@ h2{ /*postion titre "a la française"*/
   transition: transform 1s;
 }
 
-.card-body{ /*contier le titre et le texte des*/
+.card-bodyresto{ /*contier le titre et le texte des*/
     line-height: 2px;
     margin-left: 12px;
     background-color: white;
 }
 
-.card-title{
+.card-titleresto{
     font-size: 18px;
     font-weight: bolder;
 }
 
-.card-text{
+.card-textresto{
     font-size: 14px;
 }
 
-.container h3{
+.containerresto h3{
     margin-left: 12px;
     text-decoration: underline green;
 }
 
-.container a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+.containerresto a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
     text-decoration: none;
     color: black;
 }
 
-.container .partie1, .partie2, .partie3{ /*les catégories entrées plats et desserts sont côte à côte*/
+.containerresto .partie1, .partie2, .partie3{ /*les catégories entrées plats et desserts sont côte à côte*/
   display: flex;
 }
 
@@ -472,7 +472,7 @@ h2{ /*postion titre "a la française"*/
     font-style: italic;
 }
 
-.container{
+.containerresto{
     width: 100%;
     height: 1040px; /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
@@ -486,7 +486,7 @@ h2{ /*postion titre "a la française"*/
     top: 220px;
 }
 
-.container .card, .cardmodif{
+.containerresto .cardresto, .cardmodif{
     border: 2px solid none;
     border-radius: 8px;
     box-shadow: 1px 1px 2px #555;
@@ -496,11 +496,11 @@ h2{ /*postion titre "a la française"*/
     position: relative;
 }
 
-.container .cardmodif{
+.containerresto .cardmodif{
   margin-left: 1px;
 }
 
-.container .card:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
+.containerresto .cardresto:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
   transform: translate(-15px, 0) rotate(360deg);
   visibility: visible;
 }
@@ -517,7 +517,7 @@ h2{ /*postion titre "a la française"*/
 	padding: 8px;
 	border-radius: 0px 8px 8px 0px;
 }
-.container .card:hover .prix1{
+.containerresto .cardresto:hover .prix1{
   transform: translate(-40px, 0);
 }
 
@@ -529,34 +529,34 @@ h2{ /*postion titre "a la française"*/
 	transition: transform 1s;
 }
 
-.card-body{ 
+.card-bodyresto{ 
     line-height: 2px;
     margin-left: 12px;
     background-color: white;
 }
 
-.card-title{
+.card-titleresto{
     font-size: 15px;
     font-weight: bolder;
 }
 
-.card-text{
+.card-textresto{
     font-size: 13px;
 }
 
-.container h3{
+.containerresto h3{
     margin-left: 12px;
     text-decoration: underline green;
 }
 
-.container a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+.containerresto a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
     text-decoration: none;
     color: black;
 }
 
 .partie1
 {
-    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    display: flex; /*les menus de la partie sont en colonnes avec de l'espace entre eeux et vont à la ligne si je rétrcie la page*/
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
@@ -565,7 +565,7 @@ h2{ /*postion titre "a la française"*/
 
 .partie2, .partie3
 {
-    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    display: flex; /*les menus de la partie sont en colonnes avec de l'espace entre eeux et vont à la ligne si je rétrcie la page*/
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
@@ -679,7 +679,7 @@ h2{ /*postion titre "a la française"*/
     right: 35px;
 }
 
-.container{
+.containerresto{
     width: 60%;
     height: 1040px; /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
@@ -693,7 +693,7 @@ h2{ /*postion titre "a la française"*/
     top: 220px;
 }
 
-.container .card, .cardmodif{
+.containerresto .cardresto, .cardmodif{
     border: 2px solid none;
     border-radius: 8px;
     box-shadow: 1px 1px 2px #555;
@@ -703,11 +703,11 @@ h2{ /*postion titre "a la française"*/
     position: relative;
 }
 
-.container .cardmodif{
+.containerresto .cardmodif{
   margin-left: 2px;
 }
 
-.container .card:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
+.containerresto .cardresto:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
   transform: translate(-15px, 0) rotate(360deg);
   visibility: visible;
 }
@@ -724,7 +724,7 @@ h2{ /*postion titre "a la française"*/
 	padding: 12px;
 	border-radius: 0px 8px 8px 0px;
 }
-.container .card:hover .prix1{
+.containerresto .cardresto:hover .prix1{
   transform: translate(-50px, 0);
 }
 
@@ -736,34 +736,34 @@ h2{ /*postion titre "a la française"*/
 	transition: transform 1s;
 }
 
-.card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+.card-bodyresto{ 
     line-height: 2px;
     margin-left: 12px;
     background-color: white;
 }
 
-.card-title{
+.card-titleresto{
     font-size: 18px;
     font-weight: bolder;
 }
 
-.card-text{
+.card-textresto{
     font-size: 14px;
 }
 
-.container h3{
+.containerresto h3{
     margin-left: 12px;
     text-decoration: underline green;
 }
 
-.container a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+.containerresto a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
     text-decoration: none;
     color: black;
 }
 
 .partie1
 {
-    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    display: flex; /*les menus de la partie sont en colonnes avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
@@ -772,7 +772,7 @@ h2{ /*postion titre "a la française"*/
 
 .partie2, .partie3
 {
-    display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+    display: flex; /*les menus des parties sont en colones l'espace entre eux et vont à la ligne si je rétrcie la page*/
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
@@ -895,7 +895,7 @@ footer .fa-hands-helping{
       right: 35px;
   }
   
-  .container{
+  .containerresto{
       width: 630px;
       height: 1090px; /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
       border: 2px none;
@@ -909,7 +909,7 @@ footer .fa-hands-helping{
       top: 220px;
   }
   
-  .container .card, .cardmodif{
+  .containerresto .cardresto, .cardmodif{
       border: 2px solid none;
       border-radius: 8px;
       box-shadow: 1px 1px 2px #555;
@@ -919,11 +919,11 @@ footer .fa-hands-helping{
       position: relative;
   }
   
-  .container .cardmodif{
+  .containerresto .cardmodif{
     margin-left: 2px;
   }
   
-  .container .card:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
+  .containerresto .cardresto:hover .fa-check-circle{ /*animation qui se déroule lorsqu'on passe sur un plat*/
     transform: translate(-15px, 0) rotate(360deg);
     visibility: visible;
   }
@@ -940,7 +940,7 @@ footer .fa-hands-helping{
     padding: 12px;
     border-radius: 0px 8px 8px 0px;
   }
-  .container .card:hover .prix1{
+  .containerresto .cardresto:hover .prix1{
     transform: translate(-50px, 0);
   }
   
@@ -952,34 +952,34 @@ footer .fa-hands-helping{
     transition: transform 1s;
   }
   
-  .card-body{ /*les div card concernent les images de la partie gauche du main ainsi que leurs mises en pages*/
+  .card-bodyresto{ 
       line-height: 2px;
       margin-left: 12px;
       background-color: white;
   }
   
-  .card-title{
+  .card-titleresto{
       font-size: 18px;
       font-weight: bolder;
   }
   
-  .card-text{
+  .card-textresto{
       font-size: 14px;
   }
   
-  .container h3{
+  .containerresto h3{
       margin-left: 12px;
       text-decoration: underline green;
   }
   
-  .container a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+  .containerresto a{ /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
       text-decoration: none;
       color: black;
   }
   
   .partie1
   {
-      display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+      display: flex; /*les menus de la partie sont en colonnes avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
       flex-wrap: wrap;
       justify-content: space-around;
       flex-direction: column;
@@ -988,7 +988,7 @@ footer .fa-hands-helping{
   
   .partie2, .partie3
   {
-      display: flex; /*les images de la partie gauche du main sont côte à côte avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
+      display: flex; /*les menus des parties sont en colonnes avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
       flex-wrap: wrap;
       justify-content: space-around;
       flex-direction: column;
