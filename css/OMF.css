@@ -41,6 +41,11 @@ h1, h2, h4{
   font-family: 'Shrikhand';
 }
 
+h5{ /*titre des card dans les artcile de l'acceuil*/
+  padding-top: 10px;
+  margin: 0;
+}
+
 main{
   background-color: white;
   width: 100%;
@@ -295,9 +300,10 @@ footer .fa-hands-helping{
 .loader{/*permet de faire tourner à 360 degrés le loader*/
 border: 10px solid white;
 border-top: 10px solid purple;
+border-bottom: 10px solid purple;
 border-radius: 50%;
-width: 100px;
-height: 100px;
+width: 200px;
+height: 200px;
 margin: auto;
 position: absolute;
 top:0 ; left: 0; bottom:0; right :0;
