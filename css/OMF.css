@@ -70,9 +70,10 @@ header i {
 
 input {
   /*modif lieu de saisie bare de recherche*/
-  background-color: grey;
+  background-color: rgb(228, 222, 222);
   height: 37px;
   width: 100%;
+  border: white;
 }
 
 .haut {
@@ -150,6 +151,8 @@ nav.menu-nav1 ul {
   /*dispotion des nav*/
   padding-left: 0px;
   display: flex;
+ justify-content: center;
+  width: 100%;
 }
 
 nav.menu-nav1 a {
@@ -208,6 +211,7 @@ nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
   /*contient les 4 menus*/
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
 }
 
 .card-body {
@@ -236,7 +240,7 @@ nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
 }
 
 .container h2 {
-  margin-left: 26px;
+  text-align: center;
 }
 
 .container img {
@@ -338,11 +342,35 @@ footer .fa-hands-helping {
   }
 }
 /*partie RESTAURANT*/
+#bodyrestau {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+
 .logorestau {
   /*postion image titre*/
   width: 190px;
   height: 50px;
-  margin-left: 550px;
+  margin: auto;
+}
+
+.fa-arrow-left {
+  /*postion logo retour*/
+  position: absolute;
+  top: 20px;
+  left: 130px;
+}
+
+.imghaut {
+  /*postion image "a la française"*/
+  height: 250px;
+  width: 505px;
+  margin-left: 420px;
+  margin-top: 30px;
 }
 
 h2 .nomrestau {
@@ -353,37 +381,22 @@ h2 .nomrestau {
   font-style: italic;
 }
 
-.imghaut {
-  /*postion image "a la française"*/
-  height: 250px;
-  width: 505px;
-  margin-left: 400px;
-}
-
-.fa-arrow-left {
-  /*postion logo retour*/
-  position: absolute;
-  top: 20px;
-  left: 400px;
-}
-
 .containerresto {
-  width: 100%;
-  height: 90%;
-  /* j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
+  width: 462px;
+  height: 1070px;
+  /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
   border: 2px none;
   border-radius: 38px 38px 0px 0px;
   background-color: #F2F2F2;
   justify-content: space-around;
-  padding-left: 2px;
-  margin-left: 0px;
+  padding-left: 45px;
+  margin-left: 420px;
   margin-top: 40px;
   position: absolute;
   top: 220px;
 }
 
-.containerresto .cardresto, .cardmodif {
-  /*card modif est le 4eme plat des entrées que je souhaite déplacer pour la partie pc*/
+.containerresto .cardresto{
   border: 2px solid none;
   border-radius: 8px;
   box-shadow: 1px 1px 2px #555;
@@ -391,10 +404,6 @@ h2 .nomrestau {
   margin-bottom: 20px;
   background-color: white;
   position: relative;
-}
-
-.containerresto .cardmodif {
-  margin-left: 105px;
 }
 
 .containerresto .cardresto:hover .fa-check-circle {
@@ -431,7 +440,6 @@ h2 .nomrestau {
 }
 
 .card-bodyresto {
-  /*contier le titre et le texte des*/
   line-height: 2px;
   margin-left: 12px;
   background-color: white;
@@ -454,17 +462,17 @@ h2 .nomrestau {
 .heart .plainrestau {
   /*position logo coeur*/
   position: absolute;
-  left: 1265px;
-  top: 10px;
-  font-size: 25px;
+  left: 442px;
+  top: 25px;
+  font-size: 30px;
 }
 
 .heart .viderestau {
   /*position logo coeur*/
   position: absolute;
-  left: 1265px;
-  top: 10px;
-  font-size: 25px;
+  left: 442px;
+  top: 25px;
+  font-size: 30px;
 }
 
 .heart .plainrestau:hover {
@@ -491,56 +499,25 @@ h2 .nomrestau {
   color: black;
 }
 
-.containerresto .partie1, .partie2, .partie3 {
-  /*les catégories entrées plats et desserts sont côte à côte*/
-  display: flex;
-}
 
 .partie1 {
   display: flex;
-  /*les entrées sont côte à côte avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
+  /*les menus de la partie sont en colonnes avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-direction: column;
   margin-top: 5px;
-}
-
-.partie1 h3 {
-  /*marges entre le titre et les plats */
-  margin-right: 10px;
-}
-
-.partie1 .card {
-  /*marges entre les différents plats*/
-  margin-right: 10px;
-}
-
-.partie2 .card {
-  /*marges entre les différents plats*/
-  margin-right: 10px;
-}
-
-.partie2 h3 {
-  /*marges entre le titre et les plats */
-  margin-right: 33px;
-}
-
-.partie3 .card {
-  /*marges entre les différents desserts*/
-  margin-right: 10px;
-}
-
-.partie3 h3 {
-  /*marges entre le titre et les desserts */
-  margin-right: 5px;
 }
 
 .partie2, .partie3 {
   display: flex;
-  /*les plats et les desserts sont côte à côte avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
+  /*les menus des parties sont en colones l'espace entre eux et vont à la ligne si je rétrcie la page*/
   flex-wrap: wrap;
   justify-content: space-around;
+  flex-direction: column;
   margin-top: 10px;
 }
+
 
 .partie1 {
   /*animation apparition des différents plats*/
@@ -706,6 +683,7 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
+
 p .btn-commander {
   padding: 10px;
   font-size: 18px;
@@ -713,7 +691,7 @@ p .btn-commander {
   text-decoration: none;
   border: 0px solid;
   border-radius: 20px;
-  margin-right: 40px;
+  margin-left: 140px;
   color: white;
 }
 
@@ -722,7 +700,6 @@ p .btn-commander:hover {
   opacity: 0.5;
   background-color: #FF79DA;
   text-shadow: 2px 2px 2px black;
-  box-shadow: 2px 2px 2px black;
   transition-duration: 3s;
 }
 
@@ -733,7 +710,8 @@ p .btn-commander:hover {
   width: 100%;
   display: flex;
   position: absolute;
-  top: 730px;
+  top: 1330px;
+ 
 }
 
 #footerrestau a {
@@ -788,7 +766,6 @@ p .btn-commander:hover {
 
   input {
     /*modif bare de recherche*/
-    background-color: grey;
     height: 37px;
     width: 100%;
   }
@@ -1296,15 +1273,13 @@ p .btn-commander:hover {
   .bar-de-recherche {
     /*placement bar de recherche*/
     position: absolute;
-    top: 80px;
+    top: 74px;
   }
 
   input {
     /*modif bare de recherche*/
-    background-color: grey;
     height: 37px;
     width: 100%;
-    margin-left: 10px;
   }
 
   .haut {
@@ -1545,7 +1520,6 @@ p .btn-commander:hover {
     height: 250px;
     width: 505px;
     margin-left: 130px;
-    background-color: yellow;
   }
 
   h2 .nomrestau {
@@ -1569,150 +1543,6 @@ p .btn-commander:hover {
     margin-top: 40px;
     position: absolute;
     top: 220px;
-  }
-
-  .containerresto .cardresto, .cardmodif {
-    border: 2px solid none;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px #555;
-    width: 400px;
-    margin-bottom: 20px;
-    background-color: white;
-    position: relative;
-  }
-
-  .containerresto .cardmodif {
-    margin-left: 2px;
-  }
-
-  .containerresto .cardresto:hover .fa-check-circle {
-    /*animation qui se déroule lorsqu'on passe sur un plat*/
-    transform: translate(-15px, 0) rotate(360deg);
-    visibility: visible;
-  }
-
-  .fa-check-circle {
-    /*modif du logo check+ animation*/
-    color: white;
-    background-color: aqua;
-    transition: transform 1s;
-    font-size: 30px;
-    position: absolute;
-    left: 360px;
-    top: 1px;
-    visibility: hidden;
-    padding: 12px;
-    border-radius: 0px 8px 8px 0px;
-  }
-
-  .containerresto .cardresto:hover .prix1 {
-    transform: translate(-50px, 0);
-  }
-
-  .prix1 {
-    /*modif des prix + animation*/
-    color: black;
-    font-weight: bolder;
-    position: absolute;
-    right: 35px;
-    transition: transform 1s;
-  }
-
-  .card-bodyresto {
-    line-height: 2px;
-    margin-left: 12px;
-    background-color: white;
-  }
-
-  .card-titleresto {
-    font-size: 18px;
-    font-weight: bolder;
-  }
-
-  .card-textresto {
-    font-size: 14px;
-  }
-
-  .containerresto h3 {
-    margin-left: 12px;
-    text-decoration: underline green;
-  }
-
-  .heart .plainrestau {
-    /*position logo coeur*/
-    position: absolute;
-    left: 442px;
-    top: 25px;
-    font-size: 30px;
-  }
-
-  .heart .viderestau {
-    /*position logo coeur*/
-    position: absolute;
-    left: 442px;
-    top: 25px;
-    font-size: 30px;
-  }
-
-  .heart .plainrestau:hover {
-    /*lorsqu'on passe sur les coeur il devient violet après 2 sec*/
-    color: purple;
-    opacity: 1;
-    transition-duration: 2s;
-  }
-
-  .heart .plainrestau {
-    /*les coeurs plein et vide sont superposés*/
-    color: blue;
-    /*couleur on voit pas juste un exemple*/
-    opacity: 0;
-  }
-
-  .heart .viderestau {
-    color: black;
-  }
-
-  .containerresto a {
-    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
-    text-decoration: none;
-    color: black;
-  }
-
-  .partie1 {
-    display: flex;
-    /*les menus de la partie sont en colonnes avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 5px;
-  }
-
-  .partie2, .partie3 {
-    display: flex;
-    /*les menus des parties sont en colones l'espace entre eux et vont à la ligne si je rétrcie la page*/
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  p .btn-commander {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #9356DC;
-    text-decoration: none;
-    border: 0px solid;
-    border-radius: 20px;
-    margin-left: 140px;
-    color: white;
-  }
-
-  p .btn-commander:hover {
-    /*animation boutan commander au survol*/
-    opacity: 0.5;
-    background-color: #FF79DA;
-    text-shadow: 2px 2px 2px black;
-    transition-duration: 3s;
   }
 
   #footerrestau {
@@ -1775,450 +1605,6 @@ p .btn-commander:hover {
     margin-right: 10px;
   }
 }
-@media (min-width: 1400px) {
-  form i {
-    /*placement logo localisation sur grand écran*/
-    color: black;
-    position: relative;
-    left: 25px;
-    top: 5px;
-  }
 
-  .logo {
-    width: 190px;
-    height: 50px;
-    margin: auto;
-  }
-
-  .bar-de-recherche {
-    /*modif position barre de recherche*/
-    width: 100%;
-    position: static;
-    text-align: center;
-  }
-
-  input {
-    /*modif visuel barre de recherche*/
-    background-color: grey;
-    height: 37px;
-    width: 372px;
-  }
-
-  .haut {
-    height: 50px;
-  }
-
-  .textehaut {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    background-color: #F2F2F2;
-    font-size: 12px;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-  }
-
-  .textehaut h1 {
-    padding-top: 20px;
-  }
-
-  .textehaut .btn {
-    /*bouton "explorer nos restau*/
-    padding: 10px;
-    font-size: 18px;
-    background-color: #9356DC;
-    text-decoration: none;
-    color: white;
-    border: 0px solid;
-    border-radius: 20px;
-    width: 100%;
-    height: 100%;
-  }
-
-  /* modif au survol  bouton "explorer nos restaurants"*/
-  .textehaut .btn:hover {
-    opacity: 0.5;
-    background-color: #FF79DA;
-    text-shadow: 2px 2px 2px black;
-    transition-duration: 3s;
-  }
-
-  .menu-nav1 .btn1, .btn2, .btn0 {
-    /*personnalisation des bordures des nav*/
-    border: 2px solid #bbb;
-    padding: 0px;
-    border-radius: 15px;
-  }
-
-  .menu-nav1 .btnoff {
-    /*texte en gras et fond blanc pour "Fonctionnement"*/
-    font-weight: bolder;
-    background-color: white;
-    display: none;
-  }
-
-  .menu-nav1 i {
-    /*la mise en place des icones des nav*/
-    color: purple;
-    font-size: 20px;
-    background-color: #F2F2F2;
-    border: 2px none;
-    border-radius: 15px;
-    padding: 8px;
-  }
-
-  nav.menu-nav1 ul li {
-    list-style-type: none;
-    /*les catégories de la nav j'ai supprimé la puce* et changer la couleur de fond*/
-    margin: 5px;
-    width: 220px;
-    background-color: #F2F2F2;
-  }
-
-  nav.menu-nav1 ul {
-    display: flex;
-    justify-content: center;
-  }
-
-  nav.menu-nav1 a {
-    /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
-    color: black;
-    text-decoration: none;
-    margin-right: 12px;
-    font-size: 15px;
-    font-weight: bolder;
-  }
-
-  nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
-    /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
-    color: blue;
-  }
-
-  .btnmenu1 {
-    /*les boutons "Nouveau" placé sur les menus*/
-    position: absolute;
-    top: 1px;
-    right: 5px;
-    list-style: none;
-    background-color: #99E2D0;
-    padding: 8px;
-    width: 20%;
-  }
-
-  .btnmenu2 {
-    position: absolute;
-    top: 1px;
-    right: 5px;
-    list-style: none;
-    background-color: #99E2D0;
-    padding: 8px;
-    width: 20%;
-  }
-
-  .btnmenu1 a, .btnmenu2 a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .container {
-    width: 100%;
-    /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
-    border: 2px none;
-    border-radius: 8px;
-  }
-
-  .image1 {
-    display: flex;
-    /*les images sont côte à côte est centré la page*/
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .card-body {
-    line-height: 2px;
-    margin-left: 12px;
-    background-color: white;
-  }
-
-  .container .card {
-    border: 2px solid none;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px #555;
-    width: 325px;
-    margin: 10px;
-    background-color: white;
-    position: relative;
-  }
-
-  .card-title {
-    font-size: 15px;
-    font-weight: bolder;
-  }
-
-  .card-text {
-    font-size: 14px;
-  }
-
-  .container h2 {
-    text-align: center;
-  }
-
-  .container img {
-    /*taille des images avec la même bordure qu'auparavant*/
-    width: 315px;
-    height: 154px;
-    border: 2px none;
-    border-radius: 8px;
-    margin: 4px;
-    display: block;
-  }
-
-  .fa-heart {
-    /*placemet des coeur sur la page accueil*/
-    font-size: 12px;
-    position: absolute;
-    right: 44px;
-  }
-
-  span {
-    /*déplacement du logo coeur "A la francaise"*/
-    margin-left: 47px;
-  }
-
-  .container a {
-    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
-    text-decoration: none;
-    color: black;
-  }
-
-  /*PARTIE RESTAU*/
-  #bodyrestau {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-  }
-
-  .logorestau {
-    /*postion image titre*/
-    width: 190px;
-    height: 50px;
-    margin-left: 480px;
-  }
-
-  .fa-arrow-left {
-    /*postion logo retour*/
-    position: absolute;
-    top: 20px;
-    left: 180px;
-  }
-
-  .imghaut {
-    /*postion image "a la française"*/
-    height: 450px;
-    width: 834px;
-    margin-left: 180px;
-  }
-
-  h2 .nomrestau {
-    /*postion titre "a la française"*/
-    padding-top: 20px;
-    margin-left: 15px;
-    font-weight: bold;
-    font-style: italic;
-  }
-
-  .containerresto {
-    width: 630px;
-    height: 1090px;
-    /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
-    border: 2px none;
-    border-radius: 38px 38px 0px 0px;
-    background-color: #F2F2F2;
-    justify-content: space-around;
-    padding-left: 205px;
-    margin-left: 180px;
-    margin-top: 40px;
-    position: absolute;
-    top: 220px;
-  }
-
-  .containerresto .cardresto, .cardmodif {
-    border: 2px solid none;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px #555;
-    width: 400px;
-    margin-bottom: 20px;
-    background-color: white;
-    position: relative;
-  }
-
-  .containerresto .cardmodif {
-    margin-left: 2px;
-  }
-
-  .containerresto .cardresto:hover .fa-check-circle {
-    /*animation qui se déroule lorsqu'on passe sur un plat*/
-    transform: translate(-15px, 0) rotate(360deg);
-    visibility: visible;
-  }
-
-  .fa-check-circle {
-    /*modif du logo check+ animation*/
-    color: white;
-    background-color: aqua;
-    transition: transform 1s;
-    font-size: 30px;
-    position: absolute;
-    left: 360px;
-    top: 1px;
-    visibility: hidden;
-    padding: 12px;
-    border-radius: 0px 8px 8px 0px;
-  }
-
-  .containerresto .cardresto:hover .prix1 {
-    transform: translate(-50px, 0);
-  }
-
-  .prix1 {
-    /*modif des prix + animation*/
-    color: black;
-    font-weight: bolder;
-    position: absolute;
-    right: 35px;
-    transition: transform 1s;
-  }
-
-  .card-bodyresto {
-    line-height: 2px;
-    margin-left: 12px;
-    background-color: white;
-  }
-
-  .card-titleresto {
-    font-size: 18px;
-    font-weight: bolder;
-  }
-
-  .card-textresto {
-    font-size: 14px;
-  }
-
-  .containerresto h3 {
-    margin-left: 12px;
-    text-decoration: underline green;
-  }
-
-  .heart .plainrestau {
-    /*position logo coeur*/
-    position: absolute;
-    left: 442px;
-    top: 25px;
-    font-size: 30px;
-  }
-
-  .heart .viderestau {
-    /*position logo coeur*/
-    position: absolute;
-    left: 442px;
-    top: 25px;
-    font-size: 30px;
-  }
-
-  .heart .plainrestau:hover {
-    /*lorsqu'on passe sur les coeur il devient violet après 2 sec*/
-    color: purple;
-    opacity: 1;
-    transition-duration: 2s;
-  }
-
-  .heart .plainrestau {
-    /*les coeurs plein et vide sont superposés*/
-    color: blue;
-    /*couleur on voit pas juste un exemple*/
-    opacity: 0;
-  }
-
-  .heart .viderestau {
-    color: black;
-  }
-
-  .containerresto a {
-    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
-    text-decoration: none;
-    color: black;
-  }
-
-  .partie1 {
-    display: flex;
-    /*les menus de la partie sont en colonnes avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 5px;
-  }
-
-  .partie2, .partie3 {
-    display: flex;
-    /*les menus des parties sont en colonnes avec de l'espace entre elle et vont à la ligne si je rétrcie la page*/
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  p .btn-commander {
-    padding: 10px;
-    font-size: 18px;
-    background-color: #9356DC;
-    text-decoration: none;
-    border: 0px solid;
-    border-radius: 20px;
-    margin-left: 140px;
-    color: white;
-  }
-
-  p .btn-commander:hover {
-    /*animation boutan commander au survol*/
-    opacity: 0.5;
-    background-color: #FF79DA;
-    text-shadow: 2px 2px 2px black;
-    transition-duration: 3s;
-  }
-
-  #footerrestau {
-    color: white;
-    background-color: black;
-    height: 190px;
-    width: 832px;
-    margin-left: 182px;
-    position: absolute;
-    top: 1345px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-  #footerresau a {
-    /*modif du lien contact*/
-    text-decoration: none;
-    color: white;
-  }
-
-  #footerrestau p {
-    width: 100%;
-  }
-
-  #footerrestau .fa-utensils {
-    /*postion des logo du footer*/
-    margin-right: 10px;
-  }
-
-  #footerrestau .fa-hands-helping {
-    margin-right: 10px;
-  }
-}
 
 /*# sourceMappingURL=OMF.css.map */
