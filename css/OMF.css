@@ -393,6 +393,7 @@ h2 .nomrestau {
   margin-bottom: 20px;
   background-color: white;
   position: relative;
+  overflow: hidden;
 }
 .containerresto .cardresto .card-bodyresto {
   line-height: 2px;
