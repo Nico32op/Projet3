@@ -374,7 +374,7 @@ h2 .nomrestau {
 .containerresto {
   /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
   width: 462px;
-  height: 1070px;
+  height: 1082px;
   border: 2px none;
   border-radius: 38px 38px 0px 0px;
   background-color: #F2F2F2;
@@ -684,6 +684,7 @@ p .btn-commander:hover {
   opacity: 0.5;
   background-color: #FF79DA;
   text-shadow: 2px 2px 2px black;
+  box-shadow: 2px 2px 2px black;
   transition-duration: 3s;
 }
 
@@ -694,7 +695,7 @@ p .btn-commander:hover {
   width: 100%;
   display: flex;
   position: absolute;
-  top: 1330px;
+  top: 1345px;
 }
 
 #footerrestau a {
@@ -1000,8 +1001,8 @@ p .btn-commander:hover {
 
   .imghaut {
     /*postion image "a la française"*/
-    height: 250px;
-    width: 101%;
+    height: 280px;
+    width: 100%;
     margin-left: 0px;
   }
 
@@ -1014,7 +1015,7 @@ p .btn-commander:hover {
   }
 
   .containerresto {
-    width: 100%;
+    width: 98%;
     height: 1040px;
     /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
@@ -1163,7 +1164,7 @@ p .btn-commander:hover {
     height: 190px;
     width: 100%;
     position: absolute;
-    top: 1300px;
+    top: 1275px;
   }
 
   #footerrestau a {
@@ -1493,7 +1494,7 @@ p .btn-commander:hover {
 
   .containerresto {
     width: 462px;
-    height: 1070px;
+    height: 1090px;
     /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
     border: 2px none;
     border-radius: 38px 38px 0px 0px;
@@ -1513,7 +1514,7 @@ p .btn-commander:hover {
     width: 506px;
     margin-left: 130px;
     position: absolute;
-    top: 1330px;
+    top: 1350px;
   }
 
   #footerrestau a {
