@@ -70,7 +70,7 @@ header i {
 
 input {
   /*modif lieu de saisie bare de recherche*/
-  background-color: rgb(228, 222, 222);
+  background-color: #e4dede;
   height: 37px;
   width: 100%;
   border: white;
@@ -115,6 +115,42 @@ input {
   transition-duration: 3s;
 }
 
+.menu-nav1 {
+  margin-top: 0px;
+}
+.menu-nav1 ul {
+  padding-left: 0px;
+  /*dispotion des nav*/
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.menu-nav1 ul li {
+  /*les catégories de la nav sont alignés et j'ai supprimé la puce*/
+  list-style-type: none;
+  margin: 8px;
+  width: 230px;
+  margin-left: 40px;
+  height: 5%;
+}
+.menu-nav1 ul li a {
+  /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
+  color: black;
+  text-decoration: none;
+  margin-right: 12px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+.menu-nav1 ul li a i {
+  /*la mise en place des icones des nav*/
+  color: purple;
+  font-size: 20px;
+  background-color: #F2F2F2;
+  border: 2px none;
+  border-radius: 15px;
+  padding: 8px;
+}
+
 .menu-nav1 .btn1, .btn2, .btn0 {
   /*personnalisation des bordures des nav*/
   border: 2px solid #bbb;
@@ -128,49 +164,9 @@ input {
   background-color: white;
 }
 
-.menu-nav1 i {
-  /*la mise en place des icones des nav*/
-  color: purple;
-  font-size: 20px;
-  background-color: #F2F2F2;
-  border: 2px none;
-  border-radius: 15px;
-  padding: 8px;
-}
-
-nav.menu-nav1 ul li {
-  /*les catégories de la nav sont alignés et j'ai supprimé la puce*/
-  list-style-type: none;
-  margin: 8px;
-  width: 230px;
-  margin-left: 40px;
-  height: 5%;
-}
-
-nav.menu-nav1 ul {
-  /*dispotion des nav*/
-  padding-left: 0px;
-  display: flex;
- justify-content: center;
-  width: 100%;
-}
-
-nav.menu-nav1 a {
-  /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
-  color: black;
-  text-decoration: none;
-  margin-right: 12px;
-  font-size: 15px;
-  font-weight: bolder;
-}
-
 nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
   /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
   color: blue;
-}
-
-.menu-nav1 {
-  margin-top: 0px;
 }
 
 .btnmenu1 {
@@ -206,20 +202,12 @@ nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
   border: 2px none;
   border-radius: 8px;
 }
-
-.image1 {
+.container .image1 {
   /*contient les 4 menus*/
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
 }
-
-.card-body {
-  line-height: 2px;
-  margin-left: 12px;
-  background-color: white;
-}
-
 .container .card {
   border: 2px solid none;
   border-radius: 8px;
@@ -229,13 +217,16 @@ nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
   background-color: white;
   position: relative;
 }
-
-.card-title {
+.container .card .card-body {
+  line-height: 2px;
+  margin-left: 12px;
+  background-color: white;
+}
+.container .card .card-body .card-title {
   font-size: 15px;
   font-weight: bolder;
 }
-
-.card-text {
+.container .card .card-body .card-title .card-text {
   font-size: 14px;
 }
 
@@ -350,7 +341,6 @@ footer .fa-hands-helping {
   margin: auto;
 }
 
-
 .logorestau {
   /*postion image titre*/
   width: 190px;
@@ -382,9 +372,9 @@ h2 .nomrestau {
 }
 
 .containerresto {
+  /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
   width: 462px;
   height: 1070px;
-  /*j'ai ajouté un bord sans couleur avec des angles arrondies et un fond couleur gris*/
   border: 2px none;
   border-radius: 38px 38px 0px 0px;
   background-color: #F2F2F2;
@@ -395,8 +385,7 @@ h2 .nomrestau {
   position: absolute;
   top: 220px;
 }
-
-.containerresto .cardresto{
+.containerresto .cardresto {
   border: 2px solid none;
   border-radius: 8px;
   box-shadow: 1px 1px 2px #555;
@@ -404,6 +393,29 @@ h2 .nomrestau {
   margin-bottom: 20px;
   background-color: white;
   position: relative;
+}
+.containerresto .cardresto .card-bodyresto {
+  line-height: 2px;
+  margin-left: 12px;
+  background-color: white;
+}
+.containerresto .cardresto .card-bodyresto .card-titleresto {
+  font-size: 18px;
+  font-weight: bolder;
+}
+.containerresto .cardresto .card-bodyresto .card-titleresto .card-textresto {
+  font-size: 14px;
+}
+
+.containerresto h3 {
+  margin-left: 12px;
+  text-decoration: underline green;
+}
+
+.containerresto a {
+  /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+  text-decoration: none;
+  color: black;
 }
 
 .containerresto .cardresto:hover .fa-check-circle {
@@ -437,26 +449,6 @@ h2 .nomrestau {
   position: absolute;
   right: 35px;
   transition: transform 1s;
-}
-
-.card-bodyresto {
-  line-height: 2px;
-  margin-left: 12px;
-  background-color: white;
-}
-
-.card-titleresto {
-  font-size: 18px;
-  font-weight: bolder;
-}
-
-.card-textresto {
-  font-size: 14px;
-}
-
-.containerresto h3 {
-  margin-left: 12px;
-  text-decoration: underline green;
 }
 
 .heart .plainrestau {
@@ -493,13 +485,6 @@ h2 .nomrestau {
   color: black;
 }
 
-.containerresto a {
-  /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
-  text-decoration: none;
-  color: black;
-}
-
-
 .partie1 {
   display: flex;
   /*les menus de la partie sont en colonnes avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
@@ -517,7 +502,6 @@ h2 .nomrestau {
   flex-direction: column;
   margin-top: 10px;
 }
-
 
 .partie1 {
   /*animation apparition des différents plats*/
@@ -683,7 +667,6 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
-
 p .btn-commander {
   padding: 10px;
   font-size: 18px;
@@ -711,7 +694,6 @@ p .btn-commander:hover {
   display: flex;
   position: absolute;
   top: 1330px;
- 
 }
 
 #footerrestau a {
@@ -737,6 +719,7 @@ p .btn-commander:hover {
 @media (max-width: 767px) {
   body {
     background-color: white;
+    margin: auto;
   }
 
   header {
@@ -767,7 +750,7 @@ p .btn-commander:hover {
   input {
     /*modif bare de recherche*/
     height: 37px;
-    width: 100%;
+    width: 98%;
   }
 
   .haut {
@@ -801,17 +784,20 @@ p .btn-commander:hover {
     background-color: white;
   }
 
-  .menu-nav1 i {
-    /*la mise en place des icones des nav*/
-    color: purple;
-    font-size: 20px;
-    background-color: #F2F2F2;
-    border: 2px none;
-    border-radius: 15px;
-    padding: 8px;
+  nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
+    /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
+    color: blue;
   }
 
-  nav.menu-nav1 ul li {
+  .menu-nav1 {
+    text-align: left;
+    margin-top: 0px;
+  }
+  .menu-nav1 ul {
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  .menu-nav1 ul li {
     flex-direction: column;
     /*les catégories de la nav sont en colone et j'ai supprimé la puce*/
     list-style-type: none;
@@ -821,13 +807,7 @@ p .btn-commander:hover {
     margin-left: 40px;
     background-color: #F2F2F2;
   }
-
-  nav.menu-nav1 ul {
-    padding-left: 0px;
-    flex-direction: column;
-  }
-
-  nav.menu-nav1 a {
+  .menu-nav1 ul li a {
     /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
     color: black;
     text-decoration: none;
@@ -835,15 +815,14 @@ p .btn-commander:hover {
     font-size: 15px;
     font-weight: bolder;
   }
-
-  nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
-    /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
-    color: blue;
-  }
-
-  .menu-nav1 {
-    text-align: left;
-    margin-top: 0px;
+  .menu-nav1 ul li a i {
+    /*la mise en place des icones des nav*/
+    color: purple;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 15px;
+    padding: 8px;
   }
 
   .btnmenu1 {
@@ -873,7 +852,7 @@ p .btn-commander:hover {
   }
 
   .container {
-    width: 95%;
+    width: 94%;
     /*contient titre restaurant + les menus*/
     height: 1000px;
     border: 2px none;
@@ -884,46 +863,48 @@ p .btn-commander:hover {
     margin-left: 0;
     margin-top: 40px;
   }
-
-  .image1 {
+  .container .image1 {
     display: flex;
     /*les menus sont en colones avec de l'espace entre eux*/
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: column;
   }
-
-  .card-body {
+  .container .image1 .card {
+    border: 2px solid none;
+    border-radius: 8px;
+    box-shadow: 1px 1px 2px #555;
+    width: 320px;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  .container .image1 .card .card-body {
     line-height: 2px;
     margin-left: 12px;
     background-color: white;
   }
-
-  .container .card {
-    border: 2px solid none;
-    border-radius: 8px;
-    box-shadow: 1px 1px 2px #555;
-    width: 325px;
-    margin-bottom: 20px;
-    background-color: white;
-  }
-
-  .card-title {
+  .container .image1 .card .card-body .card-title {
     font-size: 15px;
     font-weight: bolder;
   }
-
-  .card-text {
+  .container .image1 .card .card-body .card-title .card-text {
     font-size: 14px;
   }
 
   .container h2 {
-    margin-left: 26px;
+    text-align: center;
+    width: 90%;
+  }
+
+  .container a {
+    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+    text-decoration: none;
+    color: black;
   }
 
   .container img {
     /*taille des images avec la même bordure qu'auparavant*/
-    width: 315px;
+    width: 312px;
     height: 154px;
     border: 2px none;
     border-radius: 8px;
@@ -941,12 +922,6 @@ p .btn-commander:hover {
   span {
     /*déplacement du logo coeur "A la francaise"*/
     margin-left: 47px;
-  }
-
-  .container a {
-    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
-    text-decoration: none;
-    color: black;
   }
 
   footer {
@@ -1012,7 +987,7 @@ p .btn-commander:hover {
     /*postion image titre*/
     width: 190px;
     height: 50px;
-    margin-left: 80px;
+    margin: auto;
   }
 
   .fa-arrow-left {
@@ -1051,8 +1026,7 @@ p .btn-commander:hover {
     position: absolute;
     top: 220px;
   }
-
-  .containerresto .cardresto, .cardmodif {
+  .containerresto .cardresto {
     border: 2px solid none;
     border-radius: 8px;
     box-shadow: 1px 1px 2px #555;
@@ -1061,9 +1035,18 @@ p .btn-commander:hover {
     background-color: white;
     position: relative;
   }
+  .containerresto .cardresto .card-bodyresto {
+    line-height: 2px;
+    margin-left: 12px;
+    background-color: white;
+  }
+  .containerresto .cardresto .card-bodyresto .card-titleresto {
+    font-size: 15px;
+    font-weight: bolder;
+  }
 
-  .containerresto .cardmodif {
-    margin-left: 1px;
+  .card-textresto {
+    font-size: 13px;
   }
 
   .containerresto .cardresto:hover .fa-check-circle {
@@ -1097,21 +1080,6 @@ p .btn-commander:hover {
     position: absolute;
     right: 35px;
     transition: transform 1s;
-  }
-
-  .card-bodyresto {
-    line-height: 2px;
-    margin-left: 12px;
-    background-color: white;
-  }
-
-  .card-titleresto {
-    font-size: 15px;
-    font-weight: bolder;
-  }
-
-  .card-textresto {
-    font-size: 13px;
   }
 
   .containerresto h3 {
@@ -1267,7 +1235,7 @@ p .btn-commander:hover {
 
   .logo {
     width: 190px;
-   margin: auto;
+    margin: auto;
   }
 
   .bar-de-recherche {
@@ -1279,7 +1247,7 @@ p .btn-commander:hover {
   input {
     /*modif bare de recherche*/
     height: 37px;
-    width: 100%;
+    width: 103%;
   }
 
   .haut {
@@ -1291,7 +1259,7 @@ p .btn-commander:hover {
     border-bottom: 1px solid #e5e5e5;
     background-color: #F2F2F2;
     font-size: 12px;
-    width: 100%;
+    width: 103%;
     height: 100%;
   }
 
@@ -1334,39 +1302,6 @@ p .btn-commander:hover {
     display: none;
   }
 
-  .menu-nav1 i {
-    /*la mise en place des icones des nav*/
-    color: purple;
-    font-size: 20px;
-    background-color: #F2F2F2;
-    border: 2px none;
-    border-radius: 15px;
-    padding: 8px;
-  }
-
-  nav.menu-nav1 ul li {
-    list-style-type: none;
-    /*les catégories de la nav j'ai supprimé la puce* et changer la couleur de fond*/
-    margin: 5px;
-    width: 220px;
-    background-color: #F2F2F2;
-  }
-
-  nav.menu-nav1 ul {
-    padding-left: 0px;
-    display: flex;
-    margin-left: 30px;
-  }
-
-  nav.menu-nav1 a {
-    /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
-    color: black;
-    text-decoration: none;
-    margin-right: 12px;
-    font-size: 15px;
-    font-weight: bolder;
-  }
-
   nav.menu-nav1 li.btn1:hover a, li.btn2:hover a, li.btn0:hover a {
     /*quand on passe sur le bouton nav le texte devient bleu au lieu de noir*/
     color: blue;
@@ -1375,6 +1310,35 @@ p .btn-commander:hover {
   .menu-nav1 {
     text-align: left;
     margin-top: 0px;
+  }
+  .menu-nav1 ul {
+    padding-left: 0px;
+    display: flex;
+    margin-left: 30px;
+  }
+  .menu-nav1 ul li {
+    list-style-type: none;
+    /*les catégories de la nav j'ai supprimé la puce* et changer la couleur de fond*/
+    margin: 5px;
+    width: 220px;
+    background-color: #F2F2F2;
+  }
+  .menu-nav1 ul li a {
+    /*les textes des catégories nav sont écries en noir, il n'y a pas de décoration au texte et pas de fond de couleur*/
+    color: black;
+    text-decoration: none;
+    margin-right: 12px;
+    font-size: 15px;
+    font-weight: bolder;
+  }
+  .menu-nav1 ul li a i {
+    /*la mise en place des icones des nav*/
+    color: purple;
+    font-size: 20px;
+    background-color: #F2F2F2;
+    border: 2px none;
+    border-radius: 15px;
+    padding: 8px;
   }
 
   .btnmenu1 {
@@ -1413,20 +1377,12 @@ p .btn-commander:hover {
     margin-left: 0;
     margin-top: 40px;
   }
-
-  .image1 {
+  .container .image1 {
     display: flex;
     /*les menus sont côte à côte avec de l'espace entre eux et vont à la ligne si je rétrcie la page*/
     flex-wrap: wrap;
   }
-
-  .card-body {
-    line-height: 2px;
-    margin-left: 12px;
-    background-color: white;
-  }
-
-  .container .card {
+  .container .image1 .card {
     border: 2px solid none;
     border-radius: 8px;
     box-shadow: 1px 1px 2px #555;
@@ -1435,8 +1391,12 @@ p .btn-commander:hover {
     background-color: white;
     position: relative;
   }
-
-  .card-title {
+  .container .image1 .card .card-body {
+    line-height: 2px;
+    margin-left: 12px;
+    background-color: white;
+  }
+  .container .image1 .card .card-body .card-title {
     font-size: 15px;
     font-weight: bolder;
   }
@@ -1447,6 +1407,12 @@ p .btn-commander:hover {
 
   .container h2 {
     margin-left: 26px;
+  }
+
+  .container a {
+    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
+    text-decoration: none;
+    color: black;
   }
 
   .container img {
@@ -1471,17 +1437,11 @@ p .btn-commander:hover {
     margin-left: 47px;
   }
 
-  .container a {
-    /*les liens des classes cités sont écris en noir et n'ont pas de décoration*/
-    text-decoration: none;
-    color: black;
-  }
-
   footer {
     color: white;
     background-color: black;
     height: 200px;
-    width: 100%;
+    width: 103%;
     display: flex;
     justify-content: space-around;
   }
@@ -1605,6 +1565,10 @@ p .btn-commander:hover {
     margin-right: 10px;
   }
 }
-
+@media (min-width: 1400px) {
+  .logorestau {
+    margin-left: 570px;
+  }
+}
 
 /*# sourceMappingURL=OMF.css.map */
