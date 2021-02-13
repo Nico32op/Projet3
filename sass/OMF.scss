@@ -422,7 +422,7 @@ h2 .nomrestau {
 
 .containerresto .cardresto:hover .fa-check-circle {
   /*animation qui se déroule lorsqu'on passe sur un plat*/
-  transform: translate(-15px, 0) rotate(360deg);
+  transform: translate(-15px, 0) rotate(360deg); /*translate permet de déplacer un élément*/
   visibility: visible;
 }
 
@@ -554,14 +554,7 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .partie2 {
   animation: fadeIn ease 4s;
   -webkit-animation: fadeIn ease 4s;
