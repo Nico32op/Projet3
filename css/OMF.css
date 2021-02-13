@@ -1144,7 +1144,7 @@ p .btn-commander:hover {
   p .btn-commander {
     padding: 10px;
     font-size: 18px;
-    background-color: linear-gradient(#9356DC, #FF79DA);
+    background: linear-gradient(#9356DC, #FF79DA);
     text-decoration: none;
     border: 0px solid;
     border-radius: 20px;
