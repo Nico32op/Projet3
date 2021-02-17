@@ -27,6 +27,20 @@ body {
   font-family: "Roboto";
 }
 
+header, .menu-nav1, .container, footer {
+  /*apparition des éléments cités différé dans le temps*/
+  animation: apparition 7s;
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 header {
   width: 100%;
   display: flex;
@@ -319,7 +333,7 @@ footer .fa-hands-helping {
   bottom: 0;
   right: 0;
   opacity: 0;
-  animation: spin 3s linear;
+  animation: spin 4s linear;
   /*l'animation s'effectue à vitesse constante*/
 }
 
@@ -509,14 +523,11 @@ h2 .nomrestau {
 .partie1 {
   /*animation apparition des différents plats*/
   /*animation augmente au milieu et ralenti à la fin*/
-  animation: fadeIn ease 2s;
-  -webkit-animation: fadeIn ease 2s;
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
   /*safari et chrome*/
-  -moz-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 3s;
   /*firefox*/
-  -o-animation: fadeIn ease 2s;
-  /*opera*/
-  -ms-animation: fadeIn ease 2s;
 }
 
 @keyframes fadeIn {
@@ -545,78 +556,13 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
-@-o-keyframes fadeIn {
-  /*opera*/
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .partie2 {
-  animation: fadeIn ease 4s;
-  -webkit-animation: fadeIn ease 4s;
-  /*safari et chrome*/
-  -moz-animation: fadeIn ease 4s;
-  /*firefox*/
-  -o-animation: fadeIn ease 4s;
-  /*opera*/
-  -ms-animation: fadeIn ease 4s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes fadeIn {
-  /*firefox*/
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  /*safari et chrome*/
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  /*opera*/
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.partie3 {
   animation: fadeIn ease 6s;
   -webkit-animation: fadeIn ease 6s;
   /*safari et chrome*/
   -moz-animation: fadeIn ease 6s;
   /*firefox*/
-  -o-animation: fadeIn ease 6s;
-  /*opera*/
-  -ms-animation: fadeIn ease 6s;
 }
 
 @keyframes fadeIn {
@@ -645,8 +591,17 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
-@-o-keyframes fadeIn {
-  /*opera*/
+
+
+.partie3 {
+  animation: fadeIn ease 9s;
+  -webkit-animation: fadeIn ease 9s;
+  /*safari et chrome*/
+  -moz-animation: fadeIn ease 9s;
+  /*firefox*/
+}
+
+@keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -654,7 +609,8 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
-@-ms-keyframes fadeIn {
+@-moz-keyframes fadeIn {
+  /*firefox*/
   0% {
     opacity: 0;
   }
@@ -662,6 +618,16 @@ h2 .nomrestau {
     opacity: 1;
   }
 }
+@-webkit-keyframes fadeIn {
+  /*safari et chrome*/
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 p .btn-commander {
   padding: 10px;
   font-size: 18px;
